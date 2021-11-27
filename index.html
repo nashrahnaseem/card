@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="cardstyle.css">
+</head>
+
+<body>
+    <div class="container1">
+        <form action="">
+            <div class="container2">
+                <div class="headings">User Name:</div><input type="text" id="userName">
+                <div class="headings"> Card No:</div>
+                <input type="text" class="cardInput" id="input1" onkeypress="return onlyKeyNumber(event)"
+                    onkeyup="handleInput(1,this, event)" style="width: 50px ;" />
+                <input type="text" class="cardInput" id="input2" onkeypress="return onlyKeyNumber(event)"
+                    onkeyup="handleInput(2, this, event)" style="width: 50px" />
+                <input type="text" class="cardInput" id="input3" onkeypress="return onlyKeyNumber(event)"
+                    onkeyup="handleInput(3, this, event)" style="width: 50px" />
+                <input type="text" class="cardInput" id="input4" onkeypress="return onlyKeyNumber(event)"
+                    onkeyup="handleInput(4, this, event)" style="width: 50px" /><br>
+                <div class="cards">
+                    <input type="radio" name="optional" value="visa" id="visa" checked>VISA
+                    <input type="radio" name="optional" value="masterCard" id="masterCard">Master Card
+                </div>
+                <button type="button" id="submit">submit</button><br>
+            </div>
+        </form>
+        <ul class="list">
+
+        </ul>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+
+</html>
