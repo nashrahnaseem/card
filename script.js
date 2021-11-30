@@ -33,7 +33,7 @@ function getInput(i) {
 
        }
 
-       return count;
+       
    }
 
 
@@ -46,7 +46,7 @@ function getInput(i) {
        
 
        if (document.getElementById("input1").value.length < maxlength || document.getElementById("input4").value.length < maxlength || document.getElementById("input3").value.length < maxlength || document.getElementById("input2").value.length < maxlength) {
-           alert("please enter the " + totalength + "digit Card number");
+           alert("please enter the " + totalLength  + "digit Card number");
            return
 
        }
